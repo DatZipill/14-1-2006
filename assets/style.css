@@ -1,0 +1,68 @@
+html {
+    background-image: url(./background.jpg);
+    height: 100%;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    height: 20em;
+    align-items: center;
+}
+
+.question-container {
+    background-color: white;
+    width: 75%;
+    height: 10em;
+    border-radius: 2em ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-content {
+    font-size: 2em;
+}
+
+.answer {
+    display: flex;
+    height: 15em;
+    justify-content: space-around;
+}
+
+
+#answer-yes, #answer-no {
+    border-radius: 2em ;
+    border-color: white;
+    width: 10em;
+    height: 6em;
+    background-image: url(./answerbackground.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 1em;
+    color: white;
+}
+
+#answer-yes:hover, #answer-no:hover {
+    background-color: #e084b1;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+    .answer {
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+    .answer-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .answer-yes, .answer-no {
+        width: 60%;
+        background-size: 10em;
+        background-position: center;
+    }
+  }
